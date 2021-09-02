@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="page-main">
+        <header>
+            <div class="header">
+                <a href="index.html" class="logo test-0-logo"></a>
+                <ul class="nav">
+                    <li class=".test-0-nav-1"><a href="#scrollSale" class="item-link link-sale "><i class="fas fa-percentage"></i>Акции</a></li>
+                    <li class=".test-0-nav-2"><a href="#searchScroll" class="item-link link-search"><i class="fas fa-search"></i>Поиск</a></li>
+                    <li class=".test-0-nav-3"><a href="" class="item-link"><i class="fas fa-registered"></i>Регистрация на рейс</a></li> 
+                    <li class=".test-0-nav-4"><a href="login.html" class="item-link"><i class="fas fa-home"></i>Личный кабинет</a></li> 
+                </ul>
+            </div>
+        </header>
+        <div class="wrap">
+            <div class="title-text">
+                <h1 class="title">Flight<span>Pool</span></h1>
+                <span class="line"></span><h3 class="lozung">Мы сближаем города, вы - живете там, где хотите</h3><span class="line"></span>
+            </div>
+            <div class="title-logo">
+                <img class="cloud" src="images/clouds/cloud_010.png" alt="" width="800" height="400">
+            </div>
+            <form action="search.html" class="search" id="searchScroll">
+                <div class="item-sea">
+                    <div class="text-input">Откуда</div>
+                    <input type="text">
+                </div>
+                <div class="item-sea">
+                    <div class="text-input color-in">Куда</div>
+                    <input type="text">
+                </div>
+                <div class="item-sea">
+                    <div class="text-input">Туда</div>
+                    <input type="date">
+                </div>
+                <div class="item-sea">
+                    <div class="text-input color-in">Обратно</div>
+                    <input type="date">
+                </div>
+                <div class="item-sea">
+                    <div class="text-input">Количество пассажиров</div>
+                    <input class="input-pas" type="number" min="1" max="8">
+                </div>
+                <button name="sea" type="submit" class="btn-sea"><i class="fas fa-search fa-2x"></i></button>
+            </form>
+        </div>
+        <div class="arrow fas fa-angle-double-down fa-3x"></div>
+    </div>
+    <div class="page-info">
+        <div class="wrap">
+            <div class="info">
+                <div class="info-graf">
+                    <h2 class="info-title">ПРИНЦИП НАКОПЛЕНИЯ <span>БРОНИРОВАНИЙ</span></h2>
+                   <!--  <p class="info-desc">Здесь вы можете ввести демо-данные для того, чтобы увидеть изменение стоимости и вероятность вылета взависомти от даты</p> -->
+                   <div class="graf-list">
+                       <div class="graf">
+                       <div class="graf-item">
+                            <h3 class="graf-item-title">Снижение <span> стоимости </span></h3>
+                            <p class="graf-item-desc">Чем больше количество бронирований на рейс - тем меньше стоимость билета</p>
+                       </div>
+                       <div class="block"><div class="litleblock"></div></div>
+                    </div>
+                    <div class="graf">
+                            <div class="graf-item">
+                                <h3 class="graf-item-title">Увелечение вероятности <span> вылета </span> </h3>
+                                <p class="graf-item-desc">Чем больше количество бронирований на рейс - тем больше вероятность вылета</p>
+                            </div>
+                        <div class="block-max"><div class="litleblock-max"></div></div>
+                        </div>
+                   </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-demo">
+        <div class="wrap">
+            <h2 class="demo-title">УЗНАЙТЕ КАК ЭТО</h2>
+            <div class="demo-list">
+                <div class="demo-item">
+                    <h3>Дата <span class="text-span">вылета</span></h3>
+                    <input id="inputStart" type="date" value="2021-07-22">
+                </div>
+                <div class="demo-item">
+                    <h3>Количество <span class="text-span">бронирований</span></h3>
+                    <input id="inputBron" type="text" value="5">
+                </div>
+            <button id="btnDemo"><i class="fas fa-angle-right"></i> <span>Узнать</span></button>
+            </div>
+            <div class="demo-stoim-list">
+                <div class="stoim-item">
+                    <h2 class="stoim-title">9000 ₽</h2>
+                    <h3>стоимость билета</h3>
+                </div>
+                <div class="stoim-item">
+                    <h2 class="pr-title">20 %</h2>
+                    <h3>вероятность вылета</h3>
+                </div>
+            </div>
+        </div>
+        <div class="bron-btn"><a href="">Забронировать</a></div>
+    </div>
+    <div class="page-dover">
+        <div class="wrap">
+            <h2 class="dover-title">НАШИ КЛИЕНТЫ НАМ <span>ДОВЕРЯЮТ</span></h2>
+            <div class="doverie">
+                <img src="images/1.png" alt="">
+                <div class="block-content">
+                    <div class="block-otz">
+                        <div class="block-text">
+                            <p class="text-otz"><i class="fa pull-left fa-border fa-quote-left"></i>Хороший выбор самолётов в компании, выбрали небольшой Гольфстрим на 14 человек. 
+                                Вылет с Москвы до Парижа чартером. Проблемы только в аэропорту были, из-за вируса везде ограничения. 
+                                Но в целом представитель 
+                                компании организовал всё хорошо, полёт комфортный.<i class="fa pull-right fa-border fa-quote-right"></i></p>
+                                
+                            <p class="ath-otz"> - Артемий К.</p>
+                        </div>
+                        <div class="block-vibor">
+                            <a href="##" onclick="return false;" class="link-slider-1"><i id="slider-item-1" class="fas fa-circle"></i></a>
+                            <a href="##" onclick="return false;" class="link-slider-2" ><i id="slider-item-2" class="fas fa-circle"></i></a>
+                            <a href="##" onclick="return false;" class="link-slider-3"><i id="slider-item-3" class="fas fa-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="page-search">
+        <div class="wrap">
+            <h2 class="search-title">ПОИСК <span>РЕЙСА</span></h2>
+            <div class="form-searh">
+                <form action="#" class="search">
+                    <div class="item-sea">
+                        <div class="text-input">Откуда</div>
+                        <input type="text">
+                    </div>
+                    <div class="item-sea">
+                        <div class="text-input color-in">Куда</div>
+                        <input type="text">
+                    </div>
+                    <div class="item-sea">
+                        <div class="text-input">Туда</div>
+                        <input type="date">
+                    </div>
+                    <div class="item-sea">
+                        <div class="text-input color-in">Обратно</div>
+                        <input type="date">
+                    </div>
+                    <div class="item-sea">
+                        <div class="text-input">Количество пассажиров</div>
+                        <input class="input-pas" type="number" min="1" max="8">
+                    </div>
+                    <button name="sea" type="submit" class="btn-sea"><i class="fas fa-search fa-2x"></i></button>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <div id="scrollSale" class="page-sale">
+        <div class="wrap">
+            <h2 class="search-title">НАШИ <span>АКЦИИ</span></h2>
+            <div class="block-sale">
+                <div class="sale-item">
+                    <div class="item-img">
+                        <svg class="svg-left" width="400" height="350">
+                            <linearGradient id="lineargradient">
+                                <stop offser = "0%" stop-color = "#e2bca0"/>
+                                <stop offser = "100%" stop-color = "#ecc7b7"/>
+                            </linearGradient>
+                            <rect width="100%" height="100%" fill = "url(#lineargradient)"/>
+                        </svg>
+                        <img class="img-left" src="images/promotions/promotion1.jpg" alt="" width="400" height="300">
+                    </div>
+                    <div class="item-text-left">
+                        <div class="item-title">Returning and Changing Your Tickets</div>
+                        <div class="item-desc">The pandemic has changed many travelers’ plans, but we know that it will not last forever. 
+                            Once all of this is over, we will continue exploring this world the way we used to. 
+                            Special rules that have been developed for this challenging situation will help you cancel your trip
+                            or postpone it until later.</div>
+                        <button class="item-btn">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="sale-item rigth">
+                    <div class="item-text">
+                        <div class="item-title">Best offers</div>
+                        <div class="item-desc">To see again the streets that witnessed so much. To hug your beloved ones and look back to see
+                            what you’ve come through. And to think of new dreams that will be so special!</div>
+                        <button class="item-btn">Узнать больше</button>
+                    </div>
+                    <div class="item-img">
+                        <svg class="svg-left" width="400" height="350">
+                            <linearGradient id="lineargradient">
+                                <stop offser = "0%" stop-color = "#e2bca0"/>
+                                <stop offser = "100%" stop-color = "#ecc7b7"/>
+                            </linearGradient>
+                            <rect width="100%" height="100%" fill = "url(#lineargradient)"/>
+                        </svg>
+                        <img class="img-rigth" src="images/promotions/promotion2.jpg" alt="" width="400" height="300">
+                    </div>
+                </div>
+                <div class="sale-item">
+                    <div class="item-img">
+                        <svg class="svg-left" width="400" height="350">
+                            <linearGradient id="lineargradient">
+                                <stop offser = "0%" stop-color = "#e2bca0"/>
+                                <stop offser = "100%" stop-color = "#ecc7b7"/>
+                            </linearGradient>
+                            <rect width="100%" height="100%" fill = "url(#lineargradient)"/>
+                        </svg>
+                        <img class="img-left" src="images/promotions/promotion3.jpg" alt="" width="400" height="300">
+                    </div>
+                    <div class="item-text-left">
+                        <div class="item-title">See you more often</div>
+                        <div class="item-desc">Since the beginning of January, we have been expanding the geography of flights in Russia so that you can
+                            see your loved ones more often. Choose our company to fly to where you are always expected.</div>
+                        <button class="item-btn">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="sale-item rigth">
+                    <div class="item-text">
+                        <div class="item-title">Everything is on again</div>
+                        <div class="item-desc">From August 10, we will resume flights to Turkey. Flights from Moscow to Antalya will be operated twice
+                            a day daily, and flights on the Moscow-Dalaman route will be operated three to seven times a week.</div>
+                        <button class="item-btn">Узнать больше</button>
+                    </div>
+                    <div class="item-img">
+                        <svg class="svg-left" width="400" height="350">
+                            <linearGradient id="lineargradient">
+                                <stop offser = "0%" stop-color = "#e2bca0"/>
+                                <stop offser = "100%" stop-color = "#ecc7b7"/>
+                            </linearGradient>
+                            <rect width="100%" height="100%" fill = "url(#lineargradient)"/>
+                        </svg>
+                        <img class="img-rigth" src="images/promotions/promotion4.jpg" alt="" width="400" height="300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-sub">
+        <div class="wrap">
+            <h2>ПОДПИСКА НА <span>ЗАКРЫТЫЕ</span> АКЦИИ</h2>
+            <div class="block-sub">
+                <div class="icon-mail"><i class="fas fa-envelope fa-2x"></i></div>
+                <input class="input-sub" placeholder="Введите email адрес" type="email">
+                <button type="submit" class="btn-sub">Подписаться</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="page-footer">
+            <div class="wrap">
+                <div class="block-footer">
+                <div class="block-left">
+                    <a href="" class="logo-footer test-0-logo"></a>
+                    <h2> <i class="fas fa-phone"></i> 8 (800) 100-10-10</h2>
+                </div>
+                <div class="block-rigth">
+                    <ul class="list-link">
+                        <li><a href="##"><i class="fas fa-home fa-fw"></i>Home</a></li>
+                        <li><a href="##"><i class="fas fa-sign-in-alt fa-fw"></i>Login</a></li>
+                        <li><a href="##"><i class="fas fa-sad-tear fa-fw"></i>Sign up</a></li>
+                        <li><a href="##"><i class="fas fa-address-book fa-fw"></i>Contact</a></li>
+                        <li><a href="##"><i class="fas fa-newspaper fa-fw"></i>News</a></li>
+                        <li><a href="##"><i class="fas fa-reply fa-fw"></i>Return</a></li>
+                        <li><a href="##"><i class="fas fa-rss fa-fw"></i>Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        
+
+
+        $(document).ready(function() {
+
+            $(window).scroll(function() {
+
+            if ($(this).scrollTop() > 400) {
+
+                $('.litleblock-max').css('width','250px','height','18px');
+                $('.litleblock').css('width','50px','height','18px');
+
+            }
+            if ($(this).scrollTop() > 400) {
+                $('.search').css('transform','scale(1.1)')
+
+                }
+
+            });
+            
+            $(".link-search").click(function () {
+            var elementClick = $(this).attr("href");
+            var destination = $(elementClick).offset().top;
+            $('html, body').animate({ scrollTop: destination }, 1100)
+            return false;
+        });
+
+
+                    $(".link-sale").click(function () {
+            var elementClick = $(this).attr("href");
+            var destination = $(elementClick).offset().top;
+            $('html, body').animate({ scrollTop: destination }, 1100);
+            return false;
+        });
+
+
+
+
+            $('.link-slider-1').click(function() {
+                $('#slider-item-1').css('color','#E95633');
+                $('#slider-item-2').css('color','#fff');
+                $('#slider-item-3').css('color','#fff');
+                $('.text-otz, .ath-otz').animate({opacity:0.0},
+                    500,
+                    function(){
+                        $('.text-otz').html('<i class="fa pull-left fa-border fa-quote-left"></i>Хороший выбор самолётов в компании, выбрали небольшой Гольфстрим на 14 человек.Вылет с Москвы до Парижа чартером. Проблемы только в аэропорту были, из-за вируса везде ограничения.Но в целом представитель компании организовал всё хорошо, полёт комфортный.<i class="fa pull-right fa-border fa-quote-right"></i>').animate({opacity: 1.0},500);
+                        $('.ath-otz').text('- Артемий К.').animate({opacity: 1.0},500);
+                    });
+            });
+
+            $('.link-slider-2').click(function() {
+                $('#slider-item-1').css('color','#fff');
+                $('#slider-item-2').css('color','#E95633');
+                $('#slider-item-3').css('color','#fff');
+                $('.text-otz, .ath-otz').animate({opacity:0.0},
+                    500,
+                    function(){
+                        $('.text-otz').html('<i class="fa pull-left fa-border fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<i class="fa pull-right fa-border fa-quote-right"></i>').animate({opacity: 1.0},500);
+                        $('.ath-otz').text('- Кузаков В.').animate({opacity: 1.0},500);
+                    });
+
+            });
+            $('.link-slider-3').click(function() {
+                $('#slider-item-1').css('color','#fff');
+                $('#slider-item-2').css('color','#fff');
+                $('#slider-item-3').css('color','#E95633');
+                $('.text-otz, .ath-otz').animate({opacity:0.0},
+                    500,
+                    function(){
+                        $('.text-otz').html('<i class="fa pull-left fa-border fa-quote-left"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<i class="fa pull-right fa-border fa-quote-right"></i>').animate({opacity: 1.0},500);
+                        $('.ath-otz').text('- Ловарова Е.').animate({opacity: 1.0},500);
+                    });
+
+            });
+
+
+            $('#btnDemo').click(function () {
+                if ($('#inputBron').val() > 30) {
+                    $('.stoim-title, .pr-title').animate(
+                        {opacity: 0.0},
+                        1000,
+                        function(){
+                            $('.stoim-title').text('6000 ₽').animate({opacity: 1.0},1000);
+                            $('.pr-title').text('90 %').animate({opacity: 1.0},1000);
+                            $('.bron-btn').css('display','flex');
+                        }
+                    );
+            }
+            if ($('#inputBron').val() > 20 && $('#inputBron').val() <= 30) {
+                    $('.stoim-title, .pr-title').animate(
+                        {opacity: 0.0},
+                        1000,
+                        function(){
+                            $('.stoim-title').text('7800 ₽').animate({opacity: 1.0},1000);
+                            $('.pr-title').text('60 %').animate({opacity: 1.0},1000);
+                            $('.bron-btn').css('display','flex');
+                        }
+                    );
+            }
+            if ($('#inputBron').val() <= 20 && $('#inputBron').val() > 10) {
+                    $('.stoim-title, .pr-title').animate(
+                        {opacity: 0.0},
+                        1000,
+                        function(){
+                            $('.stoim-title').text('8600 ₽').animate({opacity: 1.0},1000);
+                            $('.pr-title').text('40 %').animate({opacity: 1.0},1000);
+                            $('.bron-btn').css('display','flex');
+                        }
+                    );
+            }
+            if ($('#inputBron').val() <= 10 && $('#inputBron').val() > 0) {
+                    $('.stoim-title, .pr-title').animate(
+                        {opacity: 0.0},
+                        1000,
+                        function(){
+                            $('.stoim-title').text('9000 ₽').animate({opacity: 1.0},1000);
+                            $('.pr-title').text('20 %').animate({opacity: 1.0},1000);
+                            $('.bron-btn').css('display','flex');
+                        }
+                    );
+            }
+        });
+    });
+    </script>
+</body>
+</html>

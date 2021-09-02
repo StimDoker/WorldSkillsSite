@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование</title>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo test-0-logo"></a>
+            <ul class="nav">
+                <li class=".test-0-nav-1"><a href="#scrollSale" class="item-link link-sale "><i class="fas fa-percentage"></i>Акции</a></li>
+                <li class=".test-0-nav-2"><a href="#searchScroll" class="item-link link-search"><i class="fas fa-search"></i>Поиск</a></li>
+                <li class=".test-0-nav-3"><a href="" class="item-link"><i class="fas fa-registered"></i>Регистрация на рейс</a></li> 
+                <li class=".test-0-nav-4"><a href="login.html" class="item-link"><i class="fas fa-home"></i>Личный кабинет</a></li> 
+            </ul>
+        </div>
+    </header>
+    <div class="page-result">
+        <h2 class="sear-title">Ваши <span>рейсы</span></h2>
+        <div class="block-result">
+            <div class="result-item">
+                <h3>Номер рейса <span>21</span></h3>
+                <h3>Воздушное судно <span>Bombardier CRJ200</span></h3>
+                <h3>Дата вылета <span>21.02.21</span></h3>
+                <h3>Время вылета <span>22:45</span></h3>
+                <h3>Время прилета <span>08:00</span></h3>
+                <h3>время в пути <span>9:15</span></h3>
+                <h3>Стоимость <span>3400</span></h3>
+            </div>
+            <div class="result-item">
+                <h3>Номер рейса <span>21</span></h3>
+                <h3>Воздушное судно <span>Bombardier CRJ200</span></h3>
+                <h3>Дата вылета <span>21.02.21</span></h3>
+                <h3>Время вылета <span>22:45</span></h3>
+                <h3>Время прилета <span>08:00</span></h3>
+                <h3>время в пути <span>9:15</span></h3>
+                <h3>Стоимость <span>3400</span></h3>
+            </div>
+        </div>
+        <h2 class="sear-title pass">Пассажиры</span></h2>
+        <div class="block-pass">
+            <div class="pass-item">
+                <h3>Имя:</h3>
+                <input type="text">
+                <h3>Фамилия:</h3>
+                <input type="text">
+                <h3>Дата рождения:</h3>
+                <input type="date">
+                <h3>Номер документа:</h3>
+                <input type="text">
+            </div>
+        <button class="btn-add-pass">Добавить</button>
+        </div>
+    </div>
+    <button class="item-btn sea"><a href="booking_management.html">Далее</a></button>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        const $block = $('.pass-item').clone();
+
+        $('.btn-add-pass').click(function() {
+        $(this).before($block.clone());
+        });
+    </script>
+</body>
+</html>
